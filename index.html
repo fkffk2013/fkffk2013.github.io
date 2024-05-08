@@ -4,16 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--  <style>
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+    스타일 적용부분 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
-    <div id="header"></div>
-    <div id="main">
-      <div id="box1">
-        <div id="sectlon"></div>
-      </div>
-      <div id="box2"></div>
+    <div id="intro">
+      <div>RIN'S <span>PORTPOLIO</span></div>
     </div>
-    <div id="footer"></div>
+
+    <div id="nav">
+      <a href="#b1">menu1</a>
+      <a href="#b2">menu2</a>
+      <a href="#b3">menu3</a>
+      <a href="#b4">menu4</a>
+      <a href="#b5">menu5</a>
+    </div>
+    <div id="wrap">
+      <div id="b1">
+        <div>
+          <div class="profile">
+            <div class="photo"></div>
+            <div class="list">
+              <div class="list_top"></div>
+              <div class="list_bottom"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#b1">처음으로</a>
+      </div>
+
+      <div id="b2">
+        <div class="moverap">
+          <video src="img/taeyeon_FourSeasons.mp4" autoplay controls></video>
+        </div>
+        <a href="#b1">처음으로</a>
+      </div>
+      <div id="b3">
+        <div class="wapper">
+          <div class="videowapper">
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/lD1Yaf1MLGs?autoplay=1&controls=0"
+              title="[playlist] 새벽에 듣기 좋은 가사 없는 힐링 음악 | 숩숩 배경음악 1시간"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div id="b4">
+        <ul class="pop">
+          <li>
+            <a href="javascript:openpop1();"
+              ><img src="img/blackwidow_icon.jpg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:openpop2();"
+              ><img src="img/captin_icon.jpg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:openpop3();"
+              ><img src="img/hulk_icon.jpg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:openpop4();"
+              ><img src="img/ironman_icon.jpg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="javascript:openpop5();"
+              ><img src="img/thor_icon.jpg" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div class="popup" id="pop1">
+          <img src="img/blackwidow.jpg" alt="" />
+          <a href="javascript:closepop1();" class="close">닫기</a>
+        </div>
+        <div class="popup" id="pop2">
+          <img src="img/captin.jpg" alt="" />
+          <a href="javascript:closepop2();" class="close">닫기</a>
+        </div>
+        <div class="popup" id="pop3">
+          <img src="img/hulk.jpg" alt="" />
+          <a href="javascript:closepop3();" class="close">닫기</a>
+        </div>
+        <div class="popup" id="pop4">
+          <img src="img/ironman.jpg" alt="" />
+          <a href="javascript:closepop4();" class="close">닫기</a>
+        </div>
+        <div class="popup" id="pop5">
+          <img src="img/thor.jpg" alt="" />
+          <a href="javascript:closepop5();" class="close">닫기</a>
+        </div>
+      </div>
+      <div id="b5" class="slide_wrap">
+        <div class="btn">
+          <p id="prev">prev</p>
+          <p id="next">next</p>
+        </div>
+        <div class="visual">
+          <div id="v1">1</div>
+          <div id="v2">2</div>
+          <div id="v3">3</div>
+          <div id="v4">4</div>
+          <div id="v5">5</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/common.js"></script>
   </body>
 </html>
